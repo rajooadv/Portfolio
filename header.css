@@ -1,0 +1,84 @@
+*{
+ margin: 0;   
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 6em;
+}
+nav{
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 34px;
+    height: 70px;
+    padding-right: 34px;
+    width: 100%;
+    color: white;
+}
+
+.logo-div{
+    font-weight: bold;
+    /* min-width: 8em; if you want text-logo don't change shape  */
+}
+
+
+.header-links{
+    display: flex;
+    gap: 20px;
+}
+.header-links a{
+    text-decoration: none;
+    color:  rgb(243 242 242);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.header-links a:hover{
+    text-decoration: none;
+    color:magenta;
+    font-weight: bold;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media(max-width:600px){
+    .hamburger{
+        display: block;
+        transition: .5s;
+    }
+
+    .hamburger:hover{
+        color: magenta;
+    }
+
+    .header-links{
+        display: none;
+    } 
+    /* only for now */
+
+    /* .header-links{
+      display: flex;
+      flex-direction: column;
+      background-color: gray;
+      padding: 25px;
+      border-radius: 1em;
+      position: absolute;
+      top: 3em;
+      right: 1em;
+      left: 2em; //mobile anchors 
+    } */
+
+   
+}
